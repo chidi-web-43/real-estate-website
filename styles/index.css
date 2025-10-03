@@ -27,12 +27,14 @@ h5 {
   left: 0;
   width: 100%;
   height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1596370746897-0f67a92dfc6d?auto=format&fit=crop&w=1600&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   animation: heroSlide 20s infinite;
   z-index: -1;
 }
+
 
 /* Dark overlay to make text readable */
 .hero .overlay {

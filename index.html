@@ -5,6 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <!-- ✅ Preload Hero Background Images -->
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1596370746897-0f67a92dfc6d?auto=format&fit=crop&w=1600&q=80">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1560185008-b033106afc89?auto=format&fit=crop&w=1600&q=80">
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -14,36 +24,35 @@
 <body>
 
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container">
-    
-    <!-- Skyline Properties Logo -->
-    <a href="index.html" class="navbar-brand d-flex align-items-center">
-      <div class="bg-primary d-flex align-items-center justify-content-center rounded me-2" style="width:42px; height:42px;">
-        <i class="bi bi-building text-white fs-4"></i>
-      </div>
-      <div class="d-flex flex-column lh-1">
-        <span class="fw-bold text-white">Skyline</span>
-        <small class="text-light">Properties</small>
-      </div>
-    </a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <!-- Skyline Properties Logo -->
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <div class="bg-primary d-flex align-items-center justify-content-center rounded me-2" style="width:42px; height:42px;">
+          <i class="bi bi-building text-white fs-4"></i>
+        </div>
+        <div class="d-flex flex-column lh-1">
+          <span class="fw-bold text-white">Skyline</span>
+          <small class="text-light">Properties</small>
+        </div>
+      </a>
 
-    <!-- Toggler -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Navbar Links -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="listings.html">Listings</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="listings.html">Listings</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- Hero Section -->
   <header class="hero d-flex align-items-center justify-content-center text-center">
@@ -54,71 +63,71 @@
     </div>
   </header>
 
- <!-- Footer -->
-<footer class="footer bg-dark text-white pt-5">
-  <div class="container">
-    <div class="row gy-4">
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white pt-5">
+    <div class="container">
+      <div class="row gy-4">
 
-      <!-- Brand / About -->
-      <div class="col-md-4">
-        <!-- Logo -->
-        <div class="d-flex align-items-center mb-3">
-          <div class="bg-primary d-flex align-items-center justify-content-center rounded me-2" style="width:42px; height:42px;">
-            <i class="bi bi-building text-white fs-4"></i>
+        <!-- Brand / About -->
+        <div class="col-md-4">
+          <!-- Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <div class="bg-primary d-flex align-items-center justify-content-center rounded me-2" style="width:42px; height:42px;">
+              <i class="bi bi-building text-white fs-4"></i>
+            </div>
+            <div class="d-flex flex-column lh-1">
+              <span class="fw-bold text-white">Skyline</span>
+              <small class="text-light">Properties</small>
+            </div>
           </div>
-          <div class="d-flex flex-column lh-1">
-            <span class="fw-bold text-white">Skyline</span>
-            <small class="text-light">Properties</small>
+          <p>We connect you with the best homes and properties in Nigeria.
+            Trusted by thousands of families and investors.</p>
+          <div class="d-flex mt-3">
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
           </div>
         </div>
-        <p>We connect you with the best homes and properties in Nigeria.
-          Trusted by thousands of families and investors.</p>
-        <div class="d-flex mt-3">
-          <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-5"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-5"></i></a>
-          <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
+
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none d-block mb-2">Home</a></li>
+            <li><a href="listings.html" class="text-white text-decoration-none d-block mb-2">Listings</a></li>
+            <li><a href="about.html" class="text-white text-decoration-none d-block mb-2">About Us</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none d-block">Contact</a></li>
+          </ul>
         </div>
-      </div>
 
-      <!-- Quick Links -->
-      <div class="col-md-2">
-        <h6 class="fw-bold mb-3">Quick Links</h6>
-        <ul class="list-unstyled">
-          <li><a href="index.html" class="text-white text-decoration-none d-block mb-2">Home</a></li>
-          <li><a href="listings.html" class="text-white text-decoration-none d-block mb-2">Listings</a></li>
-          <li><a href="about.html" class="text-white text-decoration-none d-block mb-2">About Us</a></li>
-          <li><a href="contact.html" class="text-white text-decoration-none d-block">Contact</a></li>
-        </ul>
-      </div>
+        <!-- Services -->
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Our Services</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none d-block mb-2">Property Sales</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block mb-2">Rentals</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block mb-2">Property Management</a></li>
+            <li><a href="#" class="text-white text-decoration-none d-block">Consultation</a></li>
+          </ul>
+        </div>
 
-      <!-- Services -->
-      <div class="col-md-3">
-        <h6 class="fw-bold mb-3">Our Services</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none d-block mb-2">Property Sales</a></li>
-          <li><a href="#" class="text-white text-decoration-none d-block mb-2">Rentals</a></li>
-          <li><a href="#" class="text-white text-decoration-none d-block mb-2">Property Management</a></li>
-          <li><a href="#" class="text-white text-decoration-none d-block">Consultation</a></li>
-        </ul>
-      </div>
+        <!-- Contact Info -->
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Head Office</h6>
+          <p><i class="bi bi-geo-alt-fill me-2"></i> Skyline Properties<br>
+            19 Thaba Tseka Street, Wuse 2, Abuja, Nigeria</p>
+          <p><i class="bi bi-telephone-fill me-2"></i> +234 9071688262</p>
+          <p><i class="bi bi-envelope-fill me-2"></i> info@skylineproperties.com</p>
+        </div>
 
-      <!-- Contact Info -->
-      <div class="col-md-3">
-        <h6 class="fw-bold mb-3">Head Office</h6>
-        <p><i class="bi bi-geo-alt-fill me-2"></i> Skyline Properties<br>
-          19 Thaba Tseka Street, Wuse 2, Abuja, Nigeria</p>
-        <p><i class="bi bi-telephone-fill me-2"></i> +234 9071688262</p>
-        <p><i class="bi bi-envelope-fill me-2"></i> info@skylineproperties.com</p>
       </div>
-
+      <hr class="border-light mt-4">
+      <div class="text-center pb-3">
+        <p class="mb-0">&copy; 2025 Skyline Properties. Designed with ❤️ in Nigeria.</p>
+      </div>
     </div>
-    <hr class="border-light mt-4">
-    <div class="text-center pb-3">
-      <p class="mb-0">&copy; 2025 Skyline Properties. Designed with ❤️ in Nigeria.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
   <script src="./JS/index.js"></script>
