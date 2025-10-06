@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Skyline Properties</title>
 
   <!-- ✅ Preload Hero Background Images -->
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1596370746897-0f67a92dfc6d?auto=format&fit=crop&w=1600&q=80">
@@ -26,7 +27,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <!-- Skyline Properties Logo -->
+      <!-- Logo -->
       <a href="index.html" class="navbar-brand d-flex align-items-center">
         <div class="bg-primary d-flex align-items-center justify-content-center rounded me-2" style="width:42px; height:42px;">
           <i class="bi bi-building text-white fs-4"></i>
@@ -45,7 +46,7 @@
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="listings.html">Listings</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -55,7 +56,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero d-flex align-items-center justify-content-center text-center">
+  <header class="hero d-flex align-items-center justify-content-center text-center mb-5">
     <div class="text-white">
       <h1>Find Your Dream Home in Nigeria</h1>
       <p>Explore top properties in Abuja, Lagos, Enugu & more</p>
@@ -63,14 +64,95 @@
     </div>
   </header>
 
+  <!-- About Section -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+          alt="Real Estate Team" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h3>Who We Are</h3>
+        <p>
+          Skyline is a leading property marketplace in Nigeria. We connect buyers, sellers,
+          and agents to the best homes and commercial spaces across the country.
+        </p>
+        <p>
+          With over 10 years of experience, our mission is to make property search and transactions
+          simple, secure, and transparent.
+        </p>
+        <ul>
+          <li>Trusted by thousands of home buyers</li>
+          <li>Over 500+ verified listings nationwide</li>
+          <li>Professional real estate agents ready to help</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Properties -->
+  <div class="container my-5">
+    <div class="row g-4">
+       <!-- Ibadan -->
+      <div class="col-md-3">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top" alt="House in Ibadan">
+          <div class="card-body">
+            <h5 class="card-title">Bungalow in Ibadan</h5>
+            <p class="card-text">₦25,000,000 - Affordable 3-bedroom bungalow located in Ibadan city.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Agent</a>
+          </div>
+        </div>
+      </div>
+      <!-- Enugu -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top" alt="House in Enugu">
+          <div class="card-body">
+            <h5 class="card-title">Family House in Enugu</h5>
+            <p class="card-text">₦35,000,000 - Beautiful 3-bedroom bungalow located in a serene environment.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Agent</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Port Harcourt -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top" alt="House in Port Harcourt">
+          <div class="card-body">
+            <h5 class="card-title">Villa in Port Harcourt</h5>
+            <p class="card-text">₦75,000,000 - Stunning villa with garden space and modern finishing.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Agent</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kano -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80"
+            class="card-img-top" alt="House in Kano">
+          <div class="card-body">
+            <h5 class="card-title">Stylish Home in Kano</h5>
+            <p class="card-text">₦40,000,000 - 4-bedroom stylish duplex located in Kano city.</p>
+            <a href="contact.html" class="btn btn-primary">Contact Agent</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
-  <footer class="footer bg-dark text-white pt-5">
+  <footer class="footer bg-dark text-white pt-5 mt-5">
     <div class="container">
       <div class="row gy-4">
 
         <!-- Brand / About -->
         <div class="col-md-4">
-          <!-- Logo -->
           <div class="d-flex align-items-center mb-3">
             <div class="bg-primary d-flex align-items-center justify-content-center rounded me-2" style="width:42px; height:42px;">
               <i class="bi bi-building text-white fs-4"></i>
@@ -135,3 +217,4 @@
 </body>
 
 </html>
+```
