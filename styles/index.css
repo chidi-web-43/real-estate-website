@@ -257,3 +257,20 @@ form .btn {
   opacity: 0.2;
   border-color: #fff;
 }
+/* Footer hover effect */
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer a:hover {
+  color: #0d6efd; /* Bootstrap blue */
+  transform: translateX(5px); /* Small slide effect */
+}
+
+/* Contact info hover (address, phone, email) */
+.footer p:hover {
+  color: #0d6efd;
+  cursor: pointer;
+}
