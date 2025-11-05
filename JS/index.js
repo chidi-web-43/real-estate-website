@@ -41,3 +41,4 @@ function validateEmail(email) {
   return re.test(email);
 }
 
+
