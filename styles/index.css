@@ -1,7 +1,9 @@
+/* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   background-color: #f9f9f9;
+  color: #333;
 }
 
 h1,
@@ -31,10 +33,9 @@ h5 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: heroSlide 20s infinite;
+  animation: heroSlide 20s linear infinite;
   z-index: -1;
 }
-
 
 /* Dark overlay to make text readable */
 .hero .overlay {
@@ -47,14 +48,14 @@ h5 {
   z-index: -1;
 }
 
-/* Background slider */
+/* Continuous background slider */
 @keyframes heroSlide {
   0% {
     background-image: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80');
   }
 
   20% {
-     background-image: url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=800&q=80'); 
+    background-image: url('https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=800&q=80');
   }
 
   40% {
@@ -74,7 +75,6 @@ h5 {
   }
 }
 
-
 .hero h1 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -92,7 +92,6 @@ h5 {
   font-size: 1.1rem;
   font-weight: 600;
 }
-
 
 /* Navbar */
 .nav-link.active {
@@ -113,17 +112,7 @@ h5 {
   color: #0d6efd !important;
 }
 
-
 /* Cards */
-.card img {
-  height: 220px;
-  object-fit: cover;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
 .card {
   border: none;
   border-radius: 12px;
@@ -135,9 +124,9 @@ h5 {
   flex-direction: column;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.card img {
+  height: 220px;
+  object-fit: cover;
 }
 
 .card-body {
@@ -146,6 +135,11 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
@@ -180,7 +174,7 @@ form .btn {
   padding: 10px 20px;
 }
 
-/* Contact Map Styling */
+/* Map Section */
 .map-container {
   width: 100%;
   height: 400px;
@@ -194,18 +188,20 @@ form .btn {
   border: none;
 }
 
-/* Footer Styling */
+/* Footer */
 .footer {
   background: #111;
-  /* Darker shade for elegance */
   color: #ccc;
   font-size: 15px;
 }
 
 .footer h4,
+.footer h5,
 .footer h6 {
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
 }
 
 .footer p {
@@ -215,12 +211,18 @@ form .btn {
 .footer a {
   color: #ccc;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .footer a:hover {
   color: #0d6efd;
-  /* Bootstrap primary blue */
+  transform: translateX(5px);
+}
+
+/* Contact info hover */
+.footer p:hover {
+  color: #0d6efd;
+  cursor: pointer;
 }
 
 /* Newsletter form */
@@ -239,7 +241,6 @@ form .btn {
 
 .footer button:hover {
   background: #0b5ed7;
-  /* Darker blue on hover */
 }
 
 /* Social Icons */
@@ -264,20 +265,48 @@ form .btn {
   opacity: 0.2;
   border-color: #fff;
 }
-/* Footer hover effect */
-.footer a {
-  color: #ccc;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.2s ease;
+/* Responsive background fix for small screens */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh; /* Reduce hero height on smaller screens */
+  }
+
+  .hero::before {
+    background-size: contain; /* Show the full image */
+    background-position: center top; /* Center it nicely */
+    background-repeat: no-repeat;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }
 
-.footer a:hover {
-  color: #0d6efd; /* Bootstrap blue */
-  transform: translateX(5px); /* Small slide effect */
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero::before {
+    background-size: contain;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
 }
 
-/* Contact info hover (address, phone, email) */
-.footer p:hover {
-  color: #0d6efd;
-  cursor: pointer;
-}
